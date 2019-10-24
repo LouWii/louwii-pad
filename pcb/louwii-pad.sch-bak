@@ -241,8 +241,8 @@ $Comp
 L Device:C_Small C4
 U 1 1 5DB39D4C
 P 2200 1950
-F 0 "C4" H 2250 2050 50  0000 L CNN
-F 1 "0.1u" H 2250 1850 50  0000 L CNN
+F 0 "C4" H 2200 2000 50  0000 L CNN
+F 1 "0.1u" H 2150 1900 50  0000 L CNN
 F 2 "" H 2200 1950 50  0001 C CNN
 F 3 "~" H 2200 1950 50  0001 C CNN
 	1    2200 1950
@@ -274,7 +274,7 @@ $Comp
 L Device:C_Small C7
 U 1 1 5DB3C5CE
 P 1450 1800
-F 0 "C7" H 1450 1900 50  0000 L CNN
+F 0 "C7" H 1450 1850 50  0000 L CNN
 F 1 "0.1u" H 1400 1750 50  0000 L CNN
 F 2 "" H 1450 1800 50  0001 C CNN
 F 3 "~" H 1450 1800 50  0001 C CNN
@@ -469,7 +469,7 @@ RSW6_A
 Text GLabel 5050 3200 2    50   Input ~ 0
 RSW6_B
 $Comp
-L louwii-pad-rescue:KEYSW-keyboard_parts K1
+L keyboard_parts:KEYSW K1
 U 1 1 5DB8B82A
 P 1700 6450
 F 0 "K1" H 1700 6450 60  0000 C CNN
@@ -491,7 +491,7 @@ F 3 "~" H 1300 6650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L louwii-pad-rescue:KEYSW-keyboard_parts K2
+L keyboard_parts:KEYSW K2
 U 1 1 5DB97836
 P 1700 7050
 F 0 "K2" H 1700 7050 60  0000 C CNN
@@ -515,7 +515,7 @@ $EndComp
 Wire Wire Line
 	2000 6450 2000 7050
 $Comp
-L louwii-pad-rescue:KEYSW-keyboard_parts K3
+L keyboard_parts:KEYSW K3
 U 1 1 5DBA3AB3
 P 2600 6450
 F 0 "K3" H 2600 6450 60  0000 C CNN
@@ -539,7 +539,7 @@ $EndComp
 Wire Wire Line
 	2300 6450 2200 6450
 $Comp
-L louwii-pad-rescue:KEYSW-keyboard_parts K4
+L keyboard_parts:KEYSW K4
 U 1 1 5DBA67A2
 P 2600 7050
 F 0 "K4" H 2600 7050 60  0000 C CNN
@@ -595,7 +595,7 @@ Connection ~ 1300 7450
 Wire Wire Line
 	1300 7450 1100 7450
 $Comp
-L louwii-pad-rescue:KEYSW-keyboard_parts K5
+L keyboard_parts:KEYSW K5
 U 1 1 5DBE6DE5
 P 3500 6450
 F 0 "K5" H 3500 6450 60  0000 C CNN
@@ -626,7 +626,7 @@ Wire Wire Line
 	3100 6850 2200 6850
 Connection ~ 2200 6850
 $Comp
-L louwii-pad-rescue:KEYSW-keyboard_parts K6
+L keyboard_parts:KEYSW K6
 U 1 1 5DBECE4E
 P 3500 7050
 F 0 "K6" H 3500 7050 60  0000 C CNN
@@ -659,7 +659,7 @@ Connection ~ 2200 7450
 Wire Wire Line
 	3800 6450 3800 7050
 $Comp
-L louwii-pad-rescue:KEYSW-keyboard_parts K7
+L keyboard_parts:KEYSW K7
 U 1 1 5DBF6373
 P 4400 6450
 F 0 "K7" H 4400 6450 60  0000 C CNN
@@ -685,7 +685,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 6450 4000 6500
 $Comp
-L louwii-pad-rescue:KEYSW-keyboard_parts K8
+L keyboard_parts:KEYSW K8
 U 1 1 5DBF9F08
 P 4400 7050
 F 0 "K8" H 4400 7050 60  0000 C CNN
