@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name keyboard_parts)(type Legacy)(uri ${KIPRJMOD}/libs/keyboard_parts.lib)(options "")(descr ""))
+  (lib (name louwii-pad-cache)(type Legacy)(uri ${KIPRJMOD}/louwii-pad-cache.lib)(options "")(descr ""))
+  (lib (name atmega32u4-atmel)(type Legacy)(uri ${KIPRJMOD}/libs/atmega32u4-atmel.lib)(options "")(descr ""))
+)
