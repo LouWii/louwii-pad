@@ -378,25 +378,25 @@ F 3 "~" H 10050 5010 50  0001 C CNN
 	1    10050 4750
 	1    0    0    -1  
 $EndComp
-Text GLabel 5050 1500 2    50   Input ~ 0
+Text GLabel 5050 3300 2    50   Input ~ 0
 RSW1_A
-Text GLabel 5050 1900 2    50   Input ~ 0
+Text GLabel 5050 3100 2    50   Input ~ 0
 RSW1_B
 Text GLabel 9750 1850 0    50   Input ~ 0
 RSW1_A
 Text GLabel 9750 2050 0    50   Input ~ 0
 RSW1_B
-Text GLabel 5050 2100 2    50   Input ~ 0
+Text GLabel 5050 4300 2    50   Input ~ 0
 RSW2_A
-Text GLabel 5050 2200 2    50   Input ~ 0
+Text GLabel 5050 4400 2    50   Input ~ 0
 RSW2_B
-Text GLabel 5050 2400 2    50   Input ~ 0
-RSW3_A
-Text GLabel 5050 2500 2    50   Input ~ 0
-RSW3_B
 Text GLabel 5050 2900 2    50   Input ~ 0
-RSW4_A
+RSW3_A
 Text GLabel 5050 3000 2    50   Input ~ 0
+RSW3_B
+Text GLabel 5050 4000 2    50   Input ~ 0
+RSW4_A
+Text GLabel 5050 4100 2    50   Input ~ 0
 RSW4_B
 Connection ~ 9250 4050
 Wire Wire Line
@@ -426,9 +426,9 @@ Text GLabel 9750 4650 0    50   Input ~ 0
 RSW5_A
 Text GLabel 9750 4850 0    50   Input ~ 0
 RSW5_B
-Text GLabel 5050 3100 2    50   Input ~ 0
+Text GLabel 5050 2200 2    50   Input ~ 0
 RSW5_A
-Text GLabel 5050 3200 2    50   Input ~ 0
+Text GLabel 5050 1500 2    50   Input ~ 0
 RSW5_B
 Wire Wire Line
 	9250 4750 9250 5450
@@ -453,9 +453,9 @@ Text GLabel 9750 5350 0    50   Input ~ 0
 RSW6_A
 Text GLabel 9750 5550 0    50   Input ~ 0
 RSW6_B
-Text GLabel 5050 3300 2    50   Input ~ 0
+Text GLabel 5050 3700 2    50   Input ~ 0
 RSW6_A
-Text GLabel 5050 3400 2    50   Input ~ 0
+Text GLabel 5050 3900 2    50   Input ~ 0
 RSW6_B
 $Comp
 L keyboard_parts:KEYSW K1
@@ -735,17 +735,17 @@ Connection ~ 2900 6450
 Wire Wire Line
 	2000 6450 2000 6100
 Connection ~ 2000 6450
-Text GLabel 5050 3900 2    50   Input ~ 0
+Text GLabel 5050 3400 2    50   Input ~ 0
 row0
-Text GLabel 5050 4000 2    50   Input ~ 0
+Text GLabel 5050 1900 2    50   Input ~ 0
 row1
-Text GLabel 5050 4400 2    50   Input ~ 0
+Text GLabel 5050 2100 2    50   Input ~ 0
 col0
-Text GLabel 5050 4200 2    50   Input ~ 0
+Text GLabel 5050 2500 2    50   Input ~ 0
 col2
-Text GLabel 5050 4300 2    50   Input ~ 0
+Text GLabel 5050 2400 2    50   Input ~ 0
 col1
-Text GLabel 5050 4100 2    50   Input ~ 0
+Text GLabel 5050 4200 2    50   Input ~ 0
 col3
 Text GLabel 5050 2700 2    50   Input ~ 0
 SCL
@@ -766,7 +766,7 @@ F 3 "" H 10600 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10600 2050 10350 2050
-Text GLabel 5050 3700 2    50   Input ~ 0
+Text GLabel 5050 3200 2    50   Input ~ 0
 RSW1_S1
 $Comp
 L power:GND #PWR0112
