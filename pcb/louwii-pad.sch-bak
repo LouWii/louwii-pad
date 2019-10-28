@@ -378,9 +378,9 @@ F 3 "~" H 10050 5010 50  0001 C CNN
 	1    10050 4750
 	1    0    0    -1  
 $EndComp
-Text GLabel 5050 3100 2    50   Input ~ 0
-RSW1_A
 Text GLabel 5050 3300 2    50   Input ~ 0
+RSW1_A
+Text GLabel 5050 3100 2    50   Input ~ 0
 RSW1_B
 Text GLabel 9750 1850 0    50   Input ~ 0
 RSW1_A
