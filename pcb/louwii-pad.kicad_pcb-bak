@@ -226,7 +226,7 @@
   )
 
   (module Louwii-pad:LouWii-logo (layer F.Cu) (tedit 0) (tstamp 5DB78DAC)
-    (at 114.6 118.2 90)
+    (at 114.2 119.2 90)
     (fp_text reference G*** (at 0 0 90) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
