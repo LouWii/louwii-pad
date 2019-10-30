@@ -14,3 +14,10 @@ In case the ATmega32u4 comes without a bootloader flashed in, the board has an I
 
 [ATmega32u4 official doc](http://ww1.microchip.com/downloads/en/devicedoc/atmel-7766-8-bit-avr-atmega16u4-32u4_datasheet.pdf)
 
+## BOM (list of components)
+
+[See doc](BOM.md)
+
+## Third party libs
+
+[See doc](LIBS.md)

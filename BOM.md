@@ -1,20 +1,23 @@
 # BOM (components list)
 
-| ref      | components               | quantity | packaging           | notes                                             |
-| -------- | ------------------------ | -------- | ------------------- | ------------------------------------------------- |
-| U1       | ATmega32u4               | 1        | TQFP44              | sometimes called ATmega32u4-AU                    |
-| X1       | Crystal 16Mhz            | 1        | HC49-US             | 20ppm or 30ppm                                    |
-| SW1      | Tactile switch 5.2x5.2mm | 1        |                     | SMD switch                                        |
-| J1       | Mini USB B connector     | 1        |                     |                                                   |
-| J2       | 2x3 header pin           | 1        |                     | 2.54mm pitch; optional component                  |
-| RSW1 - 6 | rotary encoder switch    | 6        | EC11E               |                                                   |
-| RGB1 - 4 | WS2812B                  | 4        |                     | RGB LED SMD                                       |
-| D1 - 8   | diode 1N4148             | 8        | DO-35               |                                                   |
-| R1, R2   | resistor 10k             | 2        | DIN0204 or DIN 0207 | 1/4W or 1/6W, metal film                          |
-| R3, R4   | resistor 22              | 2        | DIN0204 or DIN 0207 | 1/4W or 1/6W, metal film                          |
-| R5, R6   | resistor 4.7k            | 2        | DIN0204 or DIN 0207 | 1/4W or 1/6W, metal film                          |
-| C1, C2   | capacitor 22pF           | 2        | ceramic leaded      | 10%, 5mm pitch for cheapest                       |
-| C3       | capacitor 1uF            | 1        | ceramic leaded      | 10%, 5mm pitch for cheapest                       |
-| C4 - C7  | capacitor 0.1uF          | 4        | ceramic leaded      | (=100nF), 10%, 5mm pitch for cheapest             |
-| C8       | capacitor 4.7uF          | 1        | radial leaded       | lead spacing 2mm                                  |
-| K1 - 8   | mechanical switch        | 8        |                     | MX cherry compatible mechanical keyboard switches |
+I tried to use widely available components to make it as affordable as possible and accessible. No fancy connector made by 1 manufacturer only (well, the only exception to this is the ATmega32u4, but it's one of the best chip for this use, I don't think it's going to be ended soon). That hopefully means we should still be able to find the components in years to come.
+
+| ref      | components               | quantity | packaging           | notes                                             | links                                                        |
+| -------- | ------------------------ | -------- | ------------------- | ------------------------------------------------- | ------------------------------------------------------------ |
+| U1       | ATmega32u4               | 1        | TQFP44              | sometimes called ATmega32u4-AU                    | [LCSC](https://lcsc.com/product-detail/ATMEL-AVR_ATMEL_ATMEGA32U4-AU_ATMEGA32U4-AU_C44854.html) |
+| X1       | Crystal 16Mhz            | 1        | HC49-US             | 20ppm or 30ppm                                    | [LCSC](https://lcsc.com/product-detail/DIP-Crystal-Resonators_Yangxing-Tech-X49SD16MSD2SC_C16212.html) |
+| SW1      | Tactile switch 5.2x5.2mm | 1        |                     | SMD switch                                        | [LCSC](https://lcsc.com/product-detail/Tactile-Switches_Korean-Hroparts-Elec-K2-1187SQ-D4SW-06_C223821.html) |
+| J1       | Mini USB B connector     | 1        |                     |                                                   | [LCSC](https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-C69074_C69074.html) |
+| J2       | 2x3 header pin           | 1        |                     | 2.54mm pitch; optional component                  | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_Boom-Precision-Elec-C65114_C65114.html) |
+| RSW1     | rotary encoder switch    | 1        | EC11E or EC12E      | With momentary switch built-in                    |                                                              |
+| RSW2 - 6 | rotary encoder           | 5        | EC11E or EC12E      |                                                   |                                                              |
+| RGB1 - 4 | WS2812B                  | 4        |                     | RGB LED SMD                                       | [LCSC](https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Worldsemi-WS2812B-B_C114586.html) |
+| D1 - 8   | diode 1N4148             | 8        | DO-35               |                                                   | [LCSC](https://lcsc.com/product-detail/Switching-Diode_Semtech-1N4148_C14516.html) |
+| R1, R2   | resistor 10k             | 2        | DIN0204 or DIN 0207 | 1/4W or 1/6W, metal film                          | [LCSC](https://lcsc.com/product-detail/Metal-Film-Resistor-TH_TA-I-Tech-RN16T21002F_C172508.html) |
+| R3, R4   | resistor 22              | 2        | DIN0204 or DIN 0207 | 1/4W or 1/6W, metal film                          | [LCSC](https://lcsc.com/product-detail/Metal-Film-Resistor-TH_Chian-Chia-Elec-MF1-4W-22%CE%A9-1-T52_C119288.html) |
+| R5, R6   | resistor 4.7k            | 2        | DIN0204 or DIN 0207 | 1/4W or 1/6W, metal film                          | [LCSC](https://lcsc.com/product-detail/Metal-Film-Resistor-TH_Uniroyal-Elec-MFR0W4F4701A50_C57204.html) |
+| C1, C2   | capacitor 22pF           | 2        | ceramic leaded      | 10%, 5mm pitch for cheapest                       | [LCSC](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-Leaded_Dersonic-CD1H220JC9BECHD000_C263190.html) |
+| C3       | capacitor 1uF            | 1        | ceramic leaded      | 10%, 5mm pitch for cheapest                       | [LCSC](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-Leaded_Dersonic-CD1H105KC9IER1E000_C263187.html) |
+| C4 - C7  | capacitor 0.1uF          | 4        | ceramic leaded      | (=100nF), 10%, 5mm pitch for cheapest             | [LCSC](https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-Leaded_Dersonic-CD1H104KC94ER1E000_C263182.html) |
+| C8       | capacitor 4.7uF          | 1        | radial leaded       | lead spacing 2mm                                  | [LCSC](https://lcsc.com/product-detail/Aluminum-Electrolytic-Capacitors-Leaded_Rubycon-50YXF4R7MEFC5X11_C88759.html) |
+| K1 - 8   | mechanical switch        | 8        |                     | MX cherry compatible mechanical keyboard switches |                                                              |
