@@ -11,12 +11,17 @@ In case the ATmega32u4 comes without a bootloader flashed in, the board has an I
 * [ruiqimao's tutorial](https://github.com/ruiqimao/keyboard-pcb-guide)
 * [Arisu](https://github.com/FateNozomi/arisu-pcb)
 * [cpm43](https://github.com/Gtrx0/cpm43)
+* [Gtrx0/Keyboard-template-atmega32u4](https://github.com/Gtrx0/Keyboard-template-atmega32u4)
 
 [ATmega32u4 official doc](http://ww1.microchip.com/downloads/en/devicedoc/atmel-7766-8-bit-avr-atmega16u4-32u4_datasheet.pdf)
 
 ## BOM (list of components)
 
 [See doc](BOM.md)
+
+## Blank ATmega flashing
+
+[See doc](ATMEGA.md)
 
 ## Third party libs
 
