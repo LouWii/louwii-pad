@@ -23,6 +23,14 @@ In case the ATmega32u4 comes without a bootloader flashed in, the board has an I
 
 [See doc](ATMEGA.md)
 
+## Firmware
+
+[See doc](FIRMWARE.md)
+
+## Revisions
+
+[See doc](REVISIONS.md)
+
 ## Third party libs
 
 [See doc](LIBS.md)
