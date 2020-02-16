@@ -2,6 +2,8 @@
 
 Very basic USB macro pad for tinkering and experimenting.
 
+![louwii-pad-rev1-small](https://user-images.githubusercontent.com/2750789/74600798-5a8a3e00-504b-11ea-8a32-b643b5627b3e.jpg)
+
 ## Bootloader Flashing
 
 In case the ATmega32u4 comes without a bootloader flashed in, the board has an ICSP port to flash a bootloader. See [flashing an ATmega via ICSP on Sparkfun](https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader/all).
