@@ -16,9 +16,9 @@ We're going to use the [avrdude](https://www.nongnu.org/avrdude/) command tool t
 
 The fuses are used to set some parameters to the ATmega, defining how it runs. We need to set them according to our use.
 
-Low: 0xFF (we use an external 16Mhz resonator)
-High: 0xD9 (default flash size etc..., SPI enabled) -- Note: we could disable SPI once we're done, but it's nice to have them if we mess up
-Extended: 0xC0 (Brown-out set to 4.3V, Hardware boot enabled) -- Note: We might set the brown-out down to 3.5V, in case of a voltage drop: 0xC1
+* **Low:** 0xFF (we use an external 16Mhz resonator)
+* **High:** 0xD9 (default flash size etc..., SPI enabled) -- Note: we could disable SPI once we're done, but it's nice to have them if we mess up
+* **Extended:** 0xC0 (Brown-out set to 4.3V, Hardware boot enabled) -- Note: We might set the brown-out down to 3.5V, in case of a voltage drop: 0xC1
 
 We're not touching the lock fuse, we don't need to. It should be set to 0xFF by default, allowing us to do anything we want.
 

@@ -5,7 +5,7 @@
 
 First rev made. Got PCBs manufactured by JLCPCB for cheap.
 
-Everything is working ok, not issues in the wiring, which is good. The ATmega32u4 is not easy to solder, but I was expecting that. It's doable though, with some patience and some [flux](https://en.wikipedia.org/wiki/Flux_(metallurgy).
+Everything is working ok, not issues in the wiring, which is good. The ATmega32u4 is not easy to solder, but I was expecting that. It's doable though, with some patience and some [flux](https://en.wikipedia.org/wiki/Flux_(metallurgy)).
 
 However, there are a few points that can be improved:
 
