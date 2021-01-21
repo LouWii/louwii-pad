@@ -21,7 +21,7 @@ In case the ATmega32u4 comes without a bootloader flashed in, the board has an I
 
 [See doc](BOM.md)
 
-## Blank ATmega flashing
+## Blank ATmega flashing (no bootloader flashed, fuses not set properly)
 
 [See doc](ATMEGA.md)
 

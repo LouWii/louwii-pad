@@ -89,7 +89,7 @@ device signature always changing
 avrdude: initialization failed, rc=-1
 ```
 
-When I received my ATmega chips, the fuses were set in such a way that the ATmega was expecting a "low speed" external resonator to be set on the XTAL1 pin. That's a hard to track problem: the ATmega wasn't responding when trying to be contacted via the SPI pins, and there's no way to know or change the fuses. After many hours of research, try and fail, I found 1 solution that worked: generating an approximate 8Mhz square wave signal via an Arduino.
+When I received my ATmega chips, the fuses were set in such a way that the ATmega was expecting a "low speed" external resonator to be set on the XTAL1 pin. That's a hard to track problem: the ATmega wasn't responding when trying to be contacted via the SPI pins, and there's no way to know or change the fuses. After many hours of research, trial and error, I found 1 solution that worked: generating an approximate 8Mhz square wave signal via an Arduino.
 
 What I did was: removing the 16Mhz quartz from the PCB. Connect the pin 9 or my Arduino Leonardo to the XTAL1 pin of the ATmega32u4 (the one on the left side on X1). Power on the Arduino. Connect the ATmega to the programmer. Run the test command, cross fingers. And the ATmega showed up.
 
@@ -118,4 +118,4 @@ void loop ()
 }
 ```
 
-The ATmega can also use its internal clock, so it might be able to respond to the avrdude command without any resonator wired in.
+The ATmega can also use its internal clock, so depending on how its fuses were set (specifically the `LOW` fuse), it might be able to respond to the avrdude command without any resonator soldered in. Boy, this ain't easy.
