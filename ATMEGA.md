@@ -8,13 +8,13 @@ Blank/virgin ATmega might be missing a few things in order to run properly as a 
 
 The Louwii-pad exposes ISP pins of the ATmega in order to program it via an ISP programmer. You can use an Arduino as an ISP programmer ([see official doc](https://www.arduino.cc/en/tutorial/arduinoISP#toc2)), or buy a dedicated one like an USBasp ([see official page](https://www.fischl.de/usbasp/)).
 
-There's no other way to program your ATmega32u4 if it came without a bootloader (in case of a Louwii-pad).
+There's no other way to program your ATmega32u4 if it came without a bootloader (in this particular case with a Louwii-pad).
 
 We're going to use the [avrdude](https://www.nongnu.org/avrdude/) command tool to set the fuses and flash the bootloader.
 
 ### ATmega Fuses
 
-The fuses are used to set some parameters to the ATmega, defining how it runs. We need to set them according to our use.
+The fuses are used to set some parameters to the ATmega, defining how it runs. We need to set them according to our use:
 
 * **Low:** 0xFF (we use an external 16Mhz resonator)
 * **High:** 0xD9 (default flash size etc..., SPI enabled) -- Note: we could disable SPI once we're done, but it's nice to have them if we mess up
@@ -28,8 +28,22 @@ We're not touching the lock fuse, we don't need to. It should be set to 0xFF by 
 
 You can either use Atmel DFU bootloader or the QMK fork QMK DFU.
 
-* [Atmel DFU link](https://www.microchip.com/wwwproducts/en/ATmega32U4#additional-features) - Go in the _Documents_ tab, scroll down to _Software Libraries/Firmware_ and download the bootloaders zip file. It contains `ATMega32U4-usbdevice_dfu-1_0_0.hex`, the bootloader ready to be flashed.
+* [Atmel DFU link](https://www.microchip.com/en-us/product/ATmega32U4#documenttable-caption--1286044838) - Scroll down to the _Embedded Software_ section and download the bootloaders zip file. It contains `ATMega32U4-usbdevice_dfu-1_0_0.hex`, the bootloader ready to be flashed.
 * [QMK DFU link](https://docs.qmk.fm/#/flashing?id=qmk-dfu) - QMK DFU contains some customizations compared to the Atmel DFU that cam be handy, but we're not using them really. It can be generated via `make` commands in the QMK repo: `make planck/rev4:default:bootloader`
+
+There are other bootloaders as well, like the Arduino one *Caterina*, which should work on this board as well (same as an Arduino Leonardo). It would require a change in the QMK firmware for Louwii-pad though.
+
+### `avrdude` on Windows
+
+Using `WSL` (`Windows Subsystem for Linux`) is probably the easiest.
+
+* Install WSL
+* Install `avrdude` command in your WSL terminal (`sudo apt install avrdude` should do the trick if using Ubuntu WSL).
+* Install `usbipd` Windows command - See [github repo](https://github.com/dorssel/usbipd-win) - This is so that the USBasp device can be accessed from within WSL.
+* In Windows, open an admin command prompt, run `usbipd list` to list all USB peripherals. Note the bus ID of the USBasp (looks like `1-7`)
+* Still in Windows command prompt, run `usbipd bind --busid 1-7` (replace the bus ID with the correct one)
+* Still in Windows command prompt, run `usbipd attach --wsl --busid 1-7`
+* You should be able to use the USB device in WSL now. Run the `avrdude` command in a WSL command prompt
 
 ## Steps
 
